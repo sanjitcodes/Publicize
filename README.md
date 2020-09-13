@@ -1,6 +1,7 @@
 # Publicize
 It often occurs that whenever a club/student chapter wants to notify all the students of college, they heavily rely on their executives to publicize the event notification/message on different platforms like WhatsApp, Instagram, Discord, Slack, etc. 
 Usually it happens that many executives fails to send the message or even read the message. It becomes difficult for the Core team/Organizers to make everyone aware of the event. Also, most of the people don't tend to open other apps except WhatsApp and they miss out on the notifications which leads to low attendance in the event. WhatsApp is something which everyone opens atleast once in 2 hours. 
+
 What we have thought is of receiving WhatsApp message of the EVENTS of clubs/student chapters which the students opts for. 
 It makes it much more convenient for the organizers to send the event message which includes text and images from a single channel on WhatsApp. Instead of relying on someone else to propagate the message, it will be easier to know many people are receiving the message.
 
@@ -12,7 +13,7 @@ It makes it much more convenient for the organizers to send the event message wh
     ![](images/1.PNG)
   
   
-2. Then they need to add a number - +1(415)523-8886 and save it as any name they wish to call the service.. for eg.. SVNIT Event Notification by ... 
+2. The registered students need to add a number **+1(415)523-8886** and save it as any name they wish to call the service. To start receiving messages they need to send a message **join recall-master** to the same number as shown below. 
 
     ![](images/whapp1.jpeg)
 
