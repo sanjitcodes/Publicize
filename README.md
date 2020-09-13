@@ -14,14 +14,15 @@ What we have thought is to make a platform for sending WhatsApp messages of the 
 This makes it much more convenient for the organizers to send the event message which includes text and images from a single channel on WhatsApp. Also WhatsApp groups have a limit on maximum number of participants. Hence instead of creating several WhatsApp groups, notifications can be easily sent to all registered students with one click in our case. Instead of relying on someone else to propagate the message, our platform will provide an easy and efficient solution.
 
 
+
 ## Workflow
 
-1. Students of a college need to Sign Up on our website. There they can choose the clubs that they are interested in and want to receive notifications.
+1. Students of a college need to Sign Up on our website. There they can choose the clubs that they are interested in and want to receive notifications from.
 
     ![](images/1.PNG)
   
   
-2. The registered students need to add a number **+1(415)523-8886** and save it as any name they wish to call the service. To start receiving messages they need to send a message **join recall-master** to the same number as shown below. 
+2. The registered students need to add a number **+1(415)523-8886** and save it with any name they wish to call the service. To start receiving messages they need to send a message **join recall-master** to the same number as shown below. 
 
     ![](images/whapp1.jpeg)
 
@@ -45,7 +46,10 @@ This makes it much more convenient for the organizers to send the event message 
     ![](images/5.PNG)
 
 7. After filling all the details of the message and sending it, the users will receive the message as shown below.
+
     ![](images/whapp2.jpeg)
+
+
 
 
 ## Tech/framework used
