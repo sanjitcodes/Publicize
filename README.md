@@ -12,6 +12,7 @@ It makes it much more convenient for the organizers to send the event message wh
   
   
 2. Then they need to add twilio number by ... 
+
     ![](images/wapp1.jpeg)
 
 
