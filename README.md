@@ -17,24 +17,24 @@ It makes it much more convenient for the organizers to send the event message wh
     ![](images/whapp1.jpeg)
 
 
-2. The different clubs of a college need to register first to use our features.
+3. The different clubs of a college need to register first to use our features.
 
     ![](images/2.PNG)
     
 
-3. This is the dashboard of the Logged In club from where they can send notifications.
-
-    ![](images/3.PNG)
-  
-
-4. We have added a feature wherein you can upload an image on your Google Drive from the site itself.
+4. This is the dashboard of the Logged In club from where they can send notifications.
 
     ![](images/Screenshot 2020-09-13 at 11.47.21 PM.png)
+  
 
-5. Users can enter the google drive link or any other link which provides the required image in the textbox below.
+5. We have added a feature wherein you can upload an image on your Google Drive from the site itself.
+
+    ![](images/4.PNG)
+
+6. Users can enter the google drive link or any other link which provides the required image in the textbox below.
 
     ![](images/5.PNG)
 
-6. After filling all the details of the message and sending it, the users will receive the message as shown below.
+7. After filling all the details of the message and sending it, the users will receive the message as shown below.
     ![](images/whapp2.jpeg)
 
