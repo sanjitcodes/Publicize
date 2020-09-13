@@ -80,7 +80,7 @@ The following tools were used in building this site
   
   
   ## Installation
-It is very easy to use our project if anyone wants. Just follow the steps :
+   It is very easy to use our project if anyone wants. Just follow the steps :
 
 1. Firstly if you are working locally then you need to install the following :
     * Node.js
