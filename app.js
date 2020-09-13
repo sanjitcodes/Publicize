@@ -13,7 +13,7 @@ var methodOverride = require("method-override");
 
 
 const accountSid = 'AC58d67c69fc3ba78554de312d1b4170bb';
-const authToken = '5809f65146d6231178b38f2e6a1af9b1';
+const authToken = '9bcdf7487f492a6dfbd80c3c0fdd4375';
 const client = require('twilio')(accountSid, authToken);
 
 
@@ -24,9 +24,9 @@ app.use(express.static("public"));
 app.use(methodOverride("_method"));
 
 app.use(require("express-session")({
-    secret: "This the secret message for authentication",
-    resave: false,
-    saveUninitialized: false
+  secret: "This the secret message for authentication",
+  resave: false,
+  saveUninitialized: false
 }));
 
 app.use(passport.initialize());
@@ -40,8 +40,8 @@ passport.serializeUser(Club.serializeUser());
 passport.deserializeUser(Club.deserializeUser());
 
 app.use(function (req, res, next) {
-    res.locals.currentUser = req.user;
-    next();
+  res.locals.currentUser = req.user;
+  next();
 });
 
 
@@ -50,7 +50,7 @@ const fs = require("fs");
 
 const multer = require("multer");
 const OAuth2Data = require("./credentials.json");
-var name,pic
+var name, pic
 
 const { google } = require("googleapis");
 
@@ -78,7 +78,7 @@ var Storage = multer.diskStorage({
   },
   filename: function (req, file, callback) {
     // callback(null, file.fieldname + "_" + Date.now() + "_" + file.originalname);
-    callback(null,file.originalname);
+    callback(null, file.originalname);
   },
 });
 
@@ -116,40 +116,40 @@ var upload = multer({
 //------------------------ Student Authentication Routes  ------------------------- 
 
 app.get("/student_login", function (req, res) {
-    res.render("student_login.ejs");
+  res.render("student_login.ejs");
 });
 app.get("/student_signup", function (req, res) {
-    res.render("student_signup.ejs");
+  res.render("student_signup.ejs");
 });
 
 app.post("/student_signup", function (req, res) {
-    Student.register(
-        new Student({
-            username: req.body.username,
-            name: req.body.name,
-            year: req.body.year,
-            clubs: req.body.clubs,
-            phone: req.body.phone
-        }),
-        req.body.password, function (err, user) {
+  Student.register(
+    new Student({
+      username: req.body.username,
+      name: req.body.name,
+      year: req.body.year,
+      clubs: req.body.clubs,
+      phone: req.body.phone
+    }),
+    req.body.password, function (err, user) {
 
-            if (err) {
-                console.log(err);
-            }
-            passport.authenticate("student-signup")(req, res, function () {
-                res.redirect("/");
-            });
-        });
+      if (err) {
+        console.log(err);
+      }
+      passport.authenticate("student-signup")(req, res, function () {
+        res.redirect("/");
+      });
+    });
 });
 
 app.post("/student_login", passport.authenticate("student-signup", {
-    successRedirect: "/",
-    failureRedirect: "/student_login"
+  successRedirect: "/",
+  failureRedirect: "/student_login"
 }), function (req, res) {
 });
 app.get("/logout", function (req, res) {
-    req.logout();
-    res.redirect("/");
+  req.logout();
+  res.redirect("/");
 });
 
 // ------------------------Student Authentication Ends ------------------------------
@@ -160,39 +160,39 @@ app.get("/logout", function (req, res) {
 // --------------------- Club Authentication ----------------
 
 app.get("/club_login", function (req, res) {
-    res.render("club_login.ejs");
+  res.render("club_login.ejs");
 });
 app.get("/club_signup", function (req, res) {
-    res.render("club_signup.ejs");
+  res.render("club_signup.ejs");
 });
 
 app.post("/club_signup", function (req, res) {
-    Club.register(
-        new Club({
-            username: req.body.username,
-            name: req.body.name,
-            description: req.body.description,
-            phone: req.body.phone
-        }),
-        req.body.password, function (err, user) {
+  Club.register(
+    new Club({
+      username: req.body.username,
+      name: req.body.name,
+      description: req.body.description,
+      phone: req.body.phone
+    }),
+    req.body.password, function (err, user) {
 
-            if (err) {
-                console.log(err);
-            }
-            passport.authenticate("club-signup")(req, res, function () {
-                res.redirect("/");
-            });
-        });
+      if (err) {
+        console.log(err);
+      }
+      passport.authenticate("club-signup")(req, res, function () {
+        res.redirect("/");
+      });
+    });
 });
 
 app.post("/club_login", passport.authenticate("club-signup", {
-    successRedirect: "/",
-    failureRedirect: "/club_login"
+  successRedirect: "/",
+  failureRedirect: "/club_login"
 }), function (req, res) {
 });
 app.get("/logout", function (req, res) {
-    req.logout();
-    res.redirect("/");
+  req.logout();
+  res.redirect("/");
 });
 
 // --------------------- Club Authentication ends----------------
@@ -203,7 +203,7 @@ app.get("/logout", function (req, res) {
 // ---------------------- Messaging Routes ----------------------
 
 app.get("/club/message", function (req, res) {
-    if (!authed) {
+  if (!authed) {
     // Generate an OAuth URL and redirect there
     var url = oAuth2Client.generateAuthUrl({
       access_type: "offline",
@@ -228,38 +228,39 @@ app.get("/club/message", function (req, res) {
         res.render("success", {
           name: response.data.name,
           pic: response.data.picture,
-          success:false
+          success: false
         });
       }
     });
   }
-   // res.render("club_dashboard.ejs");
+  // res.render("club_dashboard.ejs");
 });
 
 
-app.post("/club/message", function (req, res) {
-    Student.find({}, function (err, details) {
-        if (err) {
-            console.log(err);
-        } else {
-            details.forEach(function (info) {
+app.post("/club/message/send", function (req, res) {
+  Student.find({}, function (err, details) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(req.body.url)
+      details.forEach(function (info) {
 
-                if (req.body.year.includes(info.year) && info.clubs.includes(req.user.username)) {
-                    client.messages
-                        .create({
-                            body: req.body.message,
-                            from: 'whatsapp:+14155238886',
-                            to: 'whatsapp:+91' + info.phone,
-                            mediaUrl : "images/" + location
-                        })
-                        .then(message => console.log(message.sid))
-                        .done();
-                }
-
-            });
-            res.redirect("/club/message");
+        if (req.body.year.includes(info.year) && info.clubs.includes(req.user.username)) {
+          client.messages
+            .create({
+              body: req.body.message,
+              from: 'whatsapp:+14155238886',
+              to: 'whatsapp:+91' + info.phone,
+              mediaUrl: req.body.url
+            })
+            .then(message => console.log(message.sid))
+            .done();
         }
-    });
+
+      });
+      res.redirect("/club/message");
+    }
+  });
 });
 
 
@@ -273,7 +274,7 @@ app.post("/club/message", function (req, res) {
 
 
 app.get("/", function (req, res) {
-    res.render("home.ejs");
+  res.render("home.ejs");
 });
 
 
@@ -281,7 +282,7 @@ app.get("/", function (req, res) {
 
 
 // app.get("/", (req, res) => {
-  
+
 // });
 var location;
 app.post("/club/message/upload", (req, res) => {
@@ -292,12 +293,12 @@ app.post("/club/message/upload", (req, res) => {
     } else {
       console.log(req.file.path);
 
-      const drive = google.drive({ version: "v3",auth:oAuth2Client });
+      const drive = google.drive({ version: "v3", auth: oAuth2Client });
 
       const fileMetadata = {
         name: req.file.filename,
       };
-        location = req.file.filename;
+      location = req.file.filename;
       const media = {
         mimeType: req.file.mimetype,
         body: fs.createReadStream(req.file.path),
@@ -314,7 +315,7 @@ app.post("/club/message/upload", (req, res) => {
             console.error(err);
           } else {
             // fs.unlinkSync(req.file.path)
-            res.render("success",{name:name,pic:pic,success:true})
+            res.render("success", { name: name, pic: pic, success: true })
           }
 
         }
@@ -323,10 +324,10 @@ app.post("/club/message/upload", (req, res) => {
   });
 });
 
-app.get('/club/message/logout',(req,res) => {
-    authed = false
-    console.log("LOGOUT BOTTON LOGOUT BOTTON LOGOUT BOTTON LOGOUT BOTTON LOGOUT BOTTON LOGOUT BOTTON LOGOUT BOTTON LOGOUT BOTTON")
-    res.redirect('/club/message')
+app.get('/club/message/logout', (req, res) => {
+  authed = false
+  console.log("LOGOUT BOTTON LOGOUT BOTTON LOGOUT BOTTON LOGOUT BOTTON LOGOUT BOTTON LOGOUT BOTTON LOGOUT BOTTON LOGOUT BOTTON")
+  res.redirect('/club/message')
 })
 
 app.get("/google/callback", function (req, res) {
@@ -358,15 +359,15 @@ app.get("/google/callback", function (req, res) {
 //---------------------SANJITCODES ENDS----------------------
 
 function isLoggedIn(req, res, next) {
-    if (req.isAuthenticated()) {
-        return next();
-    }
-    res.redirect("/login");
+  if (req.isAuthenticated()) {
+    return next();
+  }
+  res.redirect("/login");
 }
 
 var port = process.env.PORT || 5000;
 app.listen(port, function () {
-    console.log("Server Has Started!!");
+  console.log("Server Has Started!!");
 });
 
 

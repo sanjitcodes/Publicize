@@ -77,11 +77,12 @@
     <div class="container">
 
         <div class="jumbotron text-center">
-            <h1  style="color: rgb(0, 0, 193)"><span class="fab fa-google-drive"></span> Upload via Google Drive..</h1>
+            <h1 style="color: rgb(0, 0, 193)"><span class="fab fa-google-drive"></span> Upload via Google Drive..</h1>
 
             <p style="font-family: bold; font-size: 3rem">Login or Register with:</p>
 
-            <a href="<%=url%>" type="button" class="btn btn-danger btn-large"><span class="fab fa-google"></span> Google</a>
+            <a href="<%=url%>" type="button" class="btn btn-danger btn-large"><span class="fab fa-google"></span>
+                Google</a>
 
         </div>
 
@@ -92,7 +93,10 @@
 
         <h1 style="text-align: center">Send Message</h1>
         <div class="search" style=" margin: 25px auto">
-            <form action="/club/message" method="post">
+            <form action="/club/message/send" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="url" placeholder="enter image url">
+                </div>
                 <div class="form-group">
                     <textarea class="form-control" name="message" placeholder="type your msg" rows="3"
                         cols="30"></textarea>
