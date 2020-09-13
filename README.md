@@ -11,7 +11,7 @@ It makes it much more convenient for the organizers to send the event message wh
     ![](images/1.PNG)
   
   
-2. Then they need to add twilio number by ... 
+2. Then they need to add a number - +1(415)523-8886 and save it as any name they wish to call the service.. for eg.. SVNIT Event Notification by ... 
 
     ![](images/wapp1.jpeg)
 
