@@ -12,8 +12,8 @@ var passportLocalMongoose = require("passport-local-mongoose");
 var methodOverride = require("method-override");
 
 
-const accountSid = 'AC58d67c69fc3ba78554de312d1b4170bb';
-const authToken = '9bcdf7487f492a6dfbd80c3c0fdd4375';
+const accountSid = '----';
+const authToken = '---';
 const client = require('twilio')(accountSid, authToken);
 
 
@@ -374,17 +374,3 @@ app.listen(port, function () {
 
 
 
-
-// const accountSid = 'AC58d67c69fc3ba78554de312d1b4170bb';
-// const authToken = '5809f65146d6231178b38f2e6a1af9b1';
-// const client = require('twilio')(accountSid, authToken);
-
-// client.messages
-//     .create({
-//         body: 'Hello Sanjit!',
-//         from: 'whatsapp:+14155238886',
-//         to: 'whatsapp:+919537828612',
-//         mediaUrl: 'https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
-//     })
-//     .then(message => console.log(message.sid))
-//     .done();
