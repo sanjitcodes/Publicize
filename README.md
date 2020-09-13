@@ -39,3 +39,57 @@ It makes it much more convenient for the organizers to send the event message wh
 7. After filling all the details of the message and sending it, the users will receive the message as shown below.
     ![](images/whapp2.jpeg)
 
+
+## Tech/framework used
+The following tools were used in building this site
+* Front-end development
+  * HTML
+  * CSS
+  * BootStrap 
+  * Semantic UI
+  
+* Back-end development
+  * Javascript
+  * Node.js
+  * Express.js
+  * jQuery
+  
+* Database used
+  * mongodb
+  
+* Authorisation/Authentication
+  * passport.js
+  
+* Google Drive API 
+  * multer
+  
+  
+  
+  
+  ## Installation
+It is very easy to use our project if anyone wants. Just follow the steps :
+
+1. Firstly if you are working locally then you need to install the following :
+    * Node.js
+    * MongoDB
+    * VS Code ( recommended , Any other suitable code editor will work )
+  
+2. Next you need to clone our project's GitHub repository to your desktop 
+
+3. Open command line navigate to the project folder. Then type the following commands to install required dependencies :
+     ```javascript
+      npm install async, body-parser, connect-flash, ejs, express, express-session, locus, method-override, mongoose, passport, passport-     local, passport-local-mongoose, puppeteer, request, multer, googleapis --save
+     ```
+4. Your package.json should look like this with the following dependencies
+    ![](images/package-json.png)
+    
+
+     
+6. After successful installation run the following command to start the application :
+      ```javascript
+       npm run dev
+      ```
+   If you see *Server Has Started!!* then you have successfully setup everything and good to go with our application.
+
+
+
