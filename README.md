@@ -13,7 +13,7 @@ It makes it much more convenient for the organizers to send the event message wh
   
 2. Then they need to add a number - +1(415)523-8886 and save it as any name they wish to call the service.. for eg.. SVNIT Event Notification by ... 
 
-    ![](images/wapp1.jpeg)
+    ![](images/whapp1.jpeg)
 
 
 2. The different clubs of a college need to register first to use our features.
@@ -35,5 +35,5 @@ It makes it much more convenient for the organizers to send the event message wh
     ![](images/5.PNG)
 
 6. After filling all the details of the message and sending it, the users will receive the message as shown below.
-    ![](images/wapp2.jpeg)
+    ![](images/whapp2.jpeg)
 
