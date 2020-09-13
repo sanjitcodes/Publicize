@@ -24,7 +24,7 @@ It makes it much more convenient for the organizers to send the event message wh
 
 4. This is the dashboard of the Logged In club from where they can send notifications.
 
-    ![](images/Screenshot 2020-09-13 at 11.47.21 PM.png)
+    ![](images/ss4.png)
   
 
 5. We have added a feature wherein you can upload an image on your Google Drive from the site itself.
