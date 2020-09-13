@@ -8,6 +8,7 @@ It makes it much more convenient for the organizers to send the event message wh
 ## Workflow
 
 1. Students of a college need to Sign Up on our website. There they can choose the clubs that they are interested in and want to receive notifications.
+
     ![](images/1.PNG)
   
   
@@ -28,7 +29,7 @@ It makes it much more convenient for the organizers to send the event message wh
 
 4. We have added a feature wherein you can upload an image on your Google Drive from the site itself.
 
-    ![](images/4.PNG)
+    ![](images/Screenshot 2020-09-13 at 11.47.21 PM.png)
 
 5. Users can enter the google drive link or any other link which provides the required image in the textbox below.
 
