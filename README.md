@@ -1,4 +1,12 @@
 # Publicize
+
+**Team Members:** 
+
+    * Shankhanil Borthakur (U19EC017)
+    * Sanjit Anand (U19EC008)
+
+## Project Idea
+
 It often occurs that whenever a club/student chapter wants to notify all the students of college, they heavily rely on their executives to publicize the event notification/message on different platforms like WhatsApp, Instagram, Discord, Slack, etc. 
 Usually it happens that many executives fails to send the message or even read the message. It becomes difficult for the Core team/Organizers to make everyone aware of the event. Also, most of the people don't tend to open other apps except WhatsApp and they miss out on the notifications which leads to low attendance in the event. WhatsApp is something which everyone opens atleast once in 2 hours. 
 
