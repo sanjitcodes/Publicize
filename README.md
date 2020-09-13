@@ -107,7 +107,7 @@ The following tools were used in building this site
 
 
 ## Contribute
-Our team is new to web development. Although we have tried our best to make our application robust and secure, errors might have crept in. If you have any ideas, just [open an issue](https://github.com/shankhanil007/DSC-NightCodeSprint/issues) and tell us what you think.
+Although we have tried our best to make our application robust and secure, errors might have crept in. If you have any ideas, just [open an issue](https://github.com/shankhanil007/DSC-NightCodeSprint/issues) and tell us what you think.
 
 If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
 
