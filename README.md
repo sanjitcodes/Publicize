@@ -7,11 +7,11 @@
 
 ## Project Idea
 
-It often occurs that whenever a club/student chapter wants to notify all the students of college, they heavily rely on their executives to publicize the event notification/message on different platforms like WhatsApp, Instagram, Discord, Slack, etc. 
-Usually it happens that many executives fails to send the message or even read the message. It becomes difficult for the Core team/Organizers to make everyone aware of the event. Also, most of the people don't tend to open other apps except WhatsApp and they miss out on the notifications which leads to low attendance in the event. WhatsApp is something which everyone opens atleast once in 2 hours. 
+It often occurs that whenever a club/student chapter wants to notify all the students of college, they rely heavily on their executives to spread the event notification/message on different platforms like WhatsApp, Instagram, Discord, Slack, etc. 
+Usually it happens that many executives fail to send the message or even read the message. It becomes difficult for the Core team/Organizers to make everyone aware of the event. Also, most of the people don't tend to open other apps except WhatsApp and they miss out on the notifications which leads to low attendance in events. WhatsApp is something which everyone opens atleast once in 2 hours. 
 
-What we have thought is of receiving WhatsApp message of the EVENTS of clubs/student chapters which the students opts for. 
-It makes it much more convenient for the organizers to send the event message which includes text and images from a single channel on WhatsApp. Instead of relying on someone else to propagate the message, it will be easier to know many people are receiving the message.
+What we have thought is to make a platform for sending WhatsApp messages of the EVENTS of clubs/student chapters directly to all the students registered on our platform. 
+This makes it much more convenient for the organizers to send the event message which includes text and images from a single channel on WhatsApp. Also WhatsApp group having a limit on maximum number of participant. Hence instead of creating several WhatsApp groups, notifications and be easily sent to all registered students with one click. Instead of relying on someone else to propagate the message, our platform will provide an easy and efficient solution.
 
 
 ## Workflow
