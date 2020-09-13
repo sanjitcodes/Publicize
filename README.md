@@ -93,3 +93,13 @@ It is very easy to use our project if anyone wants. Just follow the steps :
 
 
 
+## Contribute
+Our team is new to web development. Although we have tried our best to make our application robust and secure, errors might have crept in. If you have any ideas, just [open an issue](https://github.com/shankhanil007/DSC-NightCodeSprint/issues) and tell us what you think.
+
+If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
+
+  1. Fork it (https://github.com/shankhanil007/DSC-NightCodeSprint/fork)
+  2. Create your own branch (git checkout -b <branch_name>)
+  3. Commit your changes (git commit -m 'Added new auth feature')
+  4. Push to the branch (git push origin <branch_name>)
+  5. Create a new Pull Request
