@@ -2,8 +2,8 @@
 
 **Team Members:** 
 
-    * Shankhanil Borthakur (U19EC017)
-    * Sanjit Anand (U19EC008)
+    * Shankhanil Borthakur ( U19EC017 )
+    * Sanjit Anand ( U19EC008 )
 
 ## Project Idea
 
